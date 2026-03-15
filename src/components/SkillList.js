@@ -3,7 +3,7 @@ import React from 'react';
 // React.memo ensure karega ki yeh faltu mein re-render na ho
 const SkillList = React.memo(({ skillsList, onRemoveSkill }) => {
   return (
-    <ul>
+    <ul id="skill-list">
       {skillsList.map((skillName, index) => (
         <li 
           key={skillName} 
